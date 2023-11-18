@@ -1,0 +1,582 @@
+body {
+    margin: 0;
+    background-color: #263753;
+  }
+  .registrationSection{
+    margin: 0;
+    color: navy;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mainContainer{
+    display: flex;
+    margin-left: 35%;
+  }
+  .formAttributes  {
+    margin: 2px 0;
+    padding: 20px;
+    border: solid 1px orange;
+    border-style: groove;
+    border-radius: 8px;
+    min-width: 100px;
+    display: block;
+    background-color: rgba(190, 190, 190, 0.2);
+  
+    }
+   .requirementTable{
+    background-color: navy ;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: orange;
+    width: auto;
+    margin-top: 200px;
+    margin-right: -300px;
+    margin-left: 100px;
+   }
+  
+  /* Style the form container */
+  .container1 {
+    max-width: 300px;
+    padding: 20px;
+    background-color: navy ;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    font-family: cursive;
+  }
+  
+  .container5 {
+      max-width: 300px;
+      padding: 20px;
+      background-color: navy;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      text-align: center;
+      font-family: cursive;
+    }
+  /* Style form elements */
+  .form-group {
+    margin: 10px 0;
+  }
+  
+  label {
+    font-size: 25px;
+    color: orange;
+    font-family: 'Alegreya Sans SC', sans-serif;
+  }
+  
+ .regInputs,  textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: orange;
+  }
+  
+  input[type="date"] {
+    width: 50%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: orange;
+  }
+  #register, #start {
+    background-color: navy;
+    color: orange;
+    font-weight: 800;
+    padding: 35px 30px;
+    border: none;
+    border-radius: 5px;
+    width: 170px;
+    height: 50px;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a subtle shadow effect */
+    transition: transform 0.2s, box-shadow 0.2s; /* Add a smooth transition effect */
+  }
+
+  #register:disabled, #start:disabled {
+    background-color: rgb(70, 70, 248);
+    cursor:  auto;
+  }
+  #register:enabled , #start:enabled{
+    background-color: navy;
+  
+  }
+  
+  
+
+      
+  
+  
+  
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+   #GamingSection{
+       margin: auto 0;
+       display: flexbox;
+       flex-wrap: wrap;
+   }
+   .Game,.GameStats{
+       width: 50%;
+   }
+   .GameName{
+       text-align: center;
+       font-family: 'Alegreya Sans SC', sans-serif;
+       font-size: 4vw;
+       color: #fff0c1;
+       margin-top: 10px;
+       margin-bottom: 20px;
+   }
+   .GameContainer, .statsContainer{
+       width: 85%;
+       height: 70vh;
+       background-color: #e77826;
+       border-radius: 20px;
+       margin: 0 auto;
+       display: block !important;
+       box-shadow: #121c2c 0px 0px 10px 15px;
+   }
+   .statsContainer{
+    border-color: #fff0c1 10px ;
+    border: 10px double #ffffff;
+    
+   }
+   .statsContainer h3{
+       text-align: center;
+       font-family: 'Alegreya Sans SC', sans-serif;
+       font-size: 2.3vw;
+       margin-top: 0;
+       color: #fff0c1;
+   }
+   .statsContainer .playerStatsTable{
+       margin: auto;
+   }
+   .playerStatsTable tr{
+       height: 35px;
+   }
+   .statsContainer textarea{
+       background-color: #263753;
+       border-radius: 20px;
+       margin-bottom: -140px;
+   }
+   .statsContainer td{
+       color: #ffffff;
+       font-family: 'Alegreya Sans SC', sans-serif;
+       font-size: 1.5vw;
+   }
+   #percentageScoreButton{
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: brown;
+   }
+   #percentageScoreButton:hover{
+    background-color: rgb(182, 12, 12);
+    cursor: pointer;
+   }
+   #incorrectEquations{
+    color: #ffffff;
+    font-family: 'Alegreya Sans SC', sans-serif;
+
+   }
+   
+   .GameContainer{
+       padding-top: 2vw;
+       height: 40vh !important;
+   }
+   .QuestionContainer{
+       background-color: #263753;
+       width: 80%;
+       margin: 0 auto;
+       border-radius: 20px;
+   }
+   .QuestionContainer h3{
+       margin: 0;
+       text-align: center;
+       color: #ffc075;
+       font-family: 'Alegreya Sans SC', sans-serif;
+       font-size: 2.5vw;
+   }
+   .mainAreaContainer{
+       width: 80%;
+       height: 80%;
+      /* background-color: #fff0c1; */
+       margin: 0 auto;
+       margin-top: 1.5vw;
+       border-radius: 10px;
+   }
+   .theEquation{
+       display: flex;
+   }
+   .equation{
+       background-color: #263753;
+       padding: 0;
+       border-radius: 20px;
+       width: 5vw;
+       margin-right: 20px;
+       margin: 0 auto;
+       font-family: 'Alegreya Sans SC', sans-serif;
+       font-size: 2vw;
+   }
+   .equation h4{
+       text-align: center;
+       color: #fff0c1;
+   }
+   .theAnswer{
+       margin-top: 20px;
+   }
+   #answer, #status{
+       width: 8vw !important;
+       border: none !important;
+       height: 5vh !important;
+       border-radius: 20px !important;
+       background-color: #263753 !important;
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+       color: #e77826 !important;
+       font-size: 1.2vw !important;
+       font-weight: bold !important;
+   }
+   #status{
+       width: 10vw !important;
+   }
+   .labeltext1{
+       color: #fff0c1 !important;
+       font-family: 'Alegreya Sans SC', sans-serif !important;
+       font-size: 2vw !important;
+   }
+   .controls{
+       width: 85%;
+       margin: 0 auto;
+       margin-top: 20px;
+       margin-left: 90px;
+   }
+   #endButton{
+       padding-left: 2vw;
+       padding-right: 2vw;
+       padding-top: 1vw;
+       padding-bottom: 1vw;
+       background-color: rgb(177, 3, 3);
+       border: none;
+       border-radius: 10px;
+       color: #fff0c1;
+       font-family: 'Alegreya Sans SC', sans-serif;
+       font-weight: bolder;
+       font-size: 1.5vw;
+       margin-right: 3.1vw;
+       cursor: pointer;
+   }
+   #chkAnsButton{
+        cursor: pointer;
+       padding-left: 2vw;
+       padding-right: 2vw;
+       padding-top: 1vw;
+       padding-bottom: 1vw;
+       background-color: #fff0c1;
+       border: none;
+       border-radius: 10px;
+       font-family: 'Alegreya Sans SC', sans-serif;
+       font-weight: bolder;
+       font-size: 1.5vw;
+       margin-right: 3.1vw;
+   }
+   #nextButton{
+       padding-left: 2vw;
+       padding-right: 2vw;
+       padding-top: 1vw;
+       padding-bottom: 1vw;
+       background-color: green;
+       border: none;
+       border-radius: 10px;
+       color: #fff0c1;
+       font-family: 'Alegreya Sans SC', sans-serif;
+       font-weight: bolder;
+       font-size: 1.5vw;
+       margin-right: 3.1vw;
+       cursor: pointer;
+   }
+   #playerName, #correctAnswers, #showpercentage, #incorrectAnswers, #totalQuestions{
+    width: auto;
+    background-color: #263753;
+    border-radius: 10px;
+   }
+   
+
+
+
+
+
+
+
+
+
+
+.playerListContainer{
+  background-color: #263753;  
+  border:#e77826 10px solid;
+  height: 80vh;
+  margin-right: 80px;
+  margin-left: 80px;
+  border-radius: 20px;
+  width: auto;
+}
+.playerListContainer .headers td{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #ccc;
+    font-size: 2vw;
+    padding-right: 50px;
+    border-bottom:#ffc075 2px solid;   
+    font-weight: bold;
+}
+.playerListContainer td{
+    color:#e77826;
+    border-bottom: 1px #ccc dashed;
+    font-size: 1.3vw ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .GameName{
+        font-size: 10vw !important;
+    }
+   .mainContainer{
+    display: block !important;
+    margin: 0 auto;
+   }
+   #userForm{
+    display: block;
+    width: 90% !important;
+   }
+   .formAttributes{
+    width: 100% !important;
+   }
+   .requirementTable{
+    margin: auto 0;
+   }
+   .requirementTable{
+    margin: 0 auto;
+    margin-top: 5vw;
+    border-radius: 5vw;
+    margin-bottom: 5vw;
+   }
+   .reqHeader{
+    font-size: 7vw !important;
+    font-weight: bold;
+   }
+   .requirementTable  tr td{
+    font-size: 4vw ;
+    font-weight: bold;
+   }
+
+}
+
+/* Add this CSS to your existing styles or create a new style block */
+#showcharts{
+    margin: 0 auto;
+}
+.chartHeader {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .chart-container {
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 50px;
+  }
+  
+  .chart-label {
+    margin-bottom: 5px;
+  }
+  
+  .chart {
+    position: relative;
+  }
+  
+  .chart img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .percentage-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  /* Add this CSS to your existing styles or create a new style block */
+
+.chart-container {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 200px;
+  }
+  
+  .chart-label {
+    margin-bottom: 5px;
+  }
+  .header1{
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 2.5vw;
+    color: #ccc;
+  }
+  
+  .chart {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .progress-bar {
+    position: relative;
+    height: 20px;
+    background-color: #f0f0f0; /* Background color of the progress bar */
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 15px;
+  }
+  
+  .progress-fill {
+    height: 100%;
+    background-color: #e77826; /* Color of the progress fill */
+    width: 0; /* Initial width is 0, it will be dynamically set */
+    border-radius: 5px;
+    transition: width 0.5s; /* Transition effect for smoother fill animation */
+  }
+  
+  .percentage-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+
+  @media only screen and (max-width: 600px) {
+
+
+    .Game, .GameStats {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    
+    .QuestionContainer h3{
+        font-size: 7vw;
+    }
+    .equation{
+        font-size: 5vw;
+        width: 9vw;
+    }
+    .theAnswer{
+        margin: 0 auto !important;
+        margin-top: 20px !important;
+    }
+    .labeltext1{
+        font-size: 4vw !important;
+    }
+    #status, #answer{
+        width: 18vw !important;
+    }
+    .controls{
+        margin: 0 auto;
+        margin-top: 3vh;
+    }
+    #endButton, #chkAnsButton, #nextButton{
+        font-size: 4vw;
+        margin-right: 30px;
+        padding: 2vw;
+    }
+    #nextButton{
+       margin-right: 0;
+       margin-left: 10px;
+    }
+    #chkAnsButton{
+        margin-left: 30px;
+    }
+    .statsContainer h3{
+        font-size: 7vw;
+    }
+    .statsContainer{
+        height:  90vh  !important;
+    }
+    .playerStatsTable tr td{
+        font-size: 4vw !important;
+    }
+
+}
+  
+
+
+/*paste this at the end of the css code*/
+@media only screen and (max-width: 600px) {
+  .playerListContainer {
+      background-color: #263753;
+      height: 600px;
+      margin: 0px 10px 0px 10px;
+      border-radius: 20px;
+      width: fit-content;
+  }
+
+  .headers {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: #ccc;
+      font-size: 10px;
+      border-bottom: 2px solid #ffc075;
+      font-weight: bold;
+  }
+
+  td {
+      color: #e77826;
+      border-bottom: 1px #ccc dashed;
+      font-size: 10px;
+  }
+
+  .showallplayers {
+      border: 2px solid #e77826;
+  }
+}

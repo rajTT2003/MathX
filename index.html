@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>MathX</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1 class="GameName">MathX</h1>
+    <section id="registrationSection" style="display: none;">
+        <div class="mainContainer">
+            <div>
+
+                <form id="userForm">
+                    <fieldset class="formAttributes">
+                    <div class="container1">
+                        <label for="Fname">First Name</label>
+                        <input type="text" id="Fname" placeholder="First Name" class="regInputs" required>
+                        <label for="Lname">Last Name</label>
+                        <input type="text" id="Lname" placeholder="Last Name"  class="regInputs" required>
+                        <br>
+                        <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="Email Address" class="regInputs" required>
+                        <br>
+                        <label for="DoBirth">Date of Birth</label>
+                        <input type="date" id="DoBirth" class="regInputs" required><br>
+                      <label for="age">Age</label>
+                        <input type="number" id="age" class="regInputs" required>
+                    </div>
+                    
+                    <div class="container5">
+                        <label>Male</label>
+                        <input type="radio" name="gender" value="male" id="male" required>
+                         <label>Female</label>
+                        <input type="radio" name="gender" value="female" id="female" required>
+                    </div>
+                    <br>
+                    <div>
+                    <button type="submit" id="register"  >Register</button>
+                    <button type="reset" id="start" >Start</button>
+                    </div>
+                    </fieldset>
+                </form>
+                <div id="output"></div>
+            </div>
+            <div>
+                <table class="requirementTable">
+                    <tr>
+                        <td colspan="2" style="font-size: 25px; text-align: center;" class="reqHeader">Requirements</td>
+                    </tr>
+                    <tr>
+                        <td id="Validator1"> &#10006</td>
+                        <td> First Name More Than 3 Characters</td>
+                    </tr>
+                    <tr>
+                        <td id="Validator2"> &#10006</td>
+                        <td> Last Name More Than 3 Characters</td>
+                    </tr>
+                    <tr>
+                        <td id="Validator3"> &#10006</td>
+                        <td>Valid Email Address</td>
+                    </tr>
+                    <tr>
+                        <td id="Validator4"> &#10006</td>
+                        <td> Age MUST be between 8 & 12 years old</td>
+                    </tr>
+                    <tr>
+                        <td id="Validator5"> &#10006</td>
+                        <td> Select a Gender</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+     
+    </section>
+    <section id="GamingSection"  style="display: none;">
+        <div class="Game">
+        <div class="GameContainer" >
+            <div class="QuestionContainer">
+               <h3>Question # <span id="questionNumber">1</span></h3> 
+            </div>
+            <div class="mainAreaContainer">
+                <div class="theEquation">
+                    <div class="equation"><h4 id="value1">1</h4></div>
+                    <div class="equation"><h4>X</h4></div>
+                    <div class="equation"><h4 id="value2">1</h4></div>
+                    <div class="equation"><h4>=</h4></div>
+                    <div class="equation"><h4>?</h4></div>
+                </div>
+                <div class="theAnswer">
+                    <label for="answer" class="labeltext1">Answer:</label>
+                    <input type="text" id="answer">
+                    <label for="status" class="labeltext1">Status:</label>
+                    <input type="text" id="status" >
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="endButton">END</button>
+            <button id="chkAnsButton">CHECK ANSWER</button>
+            <button id="nextButton">NEXT</button>
+        </div>
+        </div>
+        <div class="GameStats">
+            <div class="statsContainer">
+                <h3>Player Stats</h3>
+                <table class="playerStatsTable">
+                    <tr>
+                        <td>Name</td>
+                        <td id="playerName"></td>
+                    </tr>
+                    <tr>
+                        <td>Correct Answers</td>
+                        <td id="correctAnswers"></td>
+                    </tr>
+                    <tr>
+                        <td>Percentage Score</td>
+                        <td id="showpercentage"></td>
+                    </tr>
+                    <tr>
+                        <td>Incorrect Answers</td>
+                        <td id="incorrectAnswers"></td>
+                    </tr>
+                    <tr>
+                        <td>Number of Questions</td>
+                        <td id="totalQuestions"></td>
+                    </tr>
+                    <tr>
+                        <td>Incorrect Equations</td>
+                        <td>
+                            <textarea name="IncorrectEquations" id="incorrectEquations" cols="30" rows="10"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button id="percentageScoreButton">Percentage Score</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section id="allPlayers"  style="display: none;">
+        <div class="playerListContainer">
+            <table id="showallplayers">
+                <tr class="headers">
+                    <td>First Name</td>
+                    <td>Last Name</td>
+                    <td>Age</td>
+                    <td>Questions</td>
+                    <td>Answer</td>
+                    <td>Status</td>
+                    <td>Percentage</td>
+                </tr>
+            </table>
+        </div>
+        <div id="showcharts" style="display: nne;"></div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
